@@ -1,0 +1,1 @@
+﻿Get-ADUser -Filter * -SearchScope Subtree -SearchBase "OU=Agent,OU=WFH,OU=Primary-Site,OU=CCHS,OU=Usr-Accedo,OU=AccedoAccs,DC=bogota,DC=accedocolombia,DC=net" |  Set-ADAccountPassword -Reset -NewPassword (ConvertTo-SecureString -AsPlainText "Avaya123" -Force)
